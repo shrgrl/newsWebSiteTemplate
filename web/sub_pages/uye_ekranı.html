@@ -1,0 +1,39 @@
+<!DOCTYPE>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Web Programlama">
+        <title>Üyelik Ekranı</title>
+        <link rel="stylesheet" href="../style/style_üye.css" type="text/css">
+           <script src="../javaScript/uye_ekrani.js">
+            kontrol();
+           </script>
+    </head>
+    <body>
+      <form name="MesajFormu">
+        <fieldset class="uye" >
+            <span class="yukari">Üye Girişi</span>
+            <input type="text" class="giris" name="giris" id="eposta">
+            <input type="reset" value="x" id="delete">
+      </form>
+      
+            <form>
+               <input type="password" class="giriss" id="bir" name="giriss">
+               <input type="reset" value="x" id="delete">
+            </form>          
+            <input type="text" value="E-mail :" id="mail" class="mail" disabled="false" >
+            <input type="text" value="Şifre   :" id="pass" disabled="false">
+            <input type="text" value="Beni Hatirla" id="hatirla" disabled="false">
+            <input type="submit"  value="Giriş Yap" class="enter" onclick="kontrol()">
+            <input type="button" value="Kaydol" class="enter" id="kayd">
+            <a href="#" id="forget" > Şifremi unuttum</a>
+         </fieldset>
+            <input type="button" value="Twiter ile Bağlan"   class="sosyal">
+            <input type="button" value="Facebook ile Bağlan" class="sosyal" id="t"> 
+         <!-- on/off switch kismi !-->
+            <div class="onoffswitch">
+               <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+               <label class="onoffswitch-label" for="myonoffswitch"></label>
+            </div>
+        
+    </body>

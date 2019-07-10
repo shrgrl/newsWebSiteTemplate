@@ -1,0 +1,98 @@
+body
+   {
+        background-image: url("../foto/body.png");
+   }    
+    
+    #bir
+    {
+        height: 600px;
+        background-color:#e4e4e4;
+    }
+    .adres
+    {
+        width: 500px;
+        height: 475px;
+        margin-top: 25px;
+    
+    }
+    #adres_simgesi
+    {
+        width: 50px;
+        height: 45px;
+        margin-top: -463px;
+        margin-left: 22px;
+    }
+    
+    h4
+    {
+      margin-left: 60px;
+    }
+    
+    iframe
+    {
+        width: 443px;
+        height: 350px;
+        margin-left: 7px;;
+    }
+    
+    .verticalLine {
+        border-left: groove #a8a8a8;
+        height: 550px;
+        margin-left: 625px;
+        margin-top: -500px;
+    }
+    .sag_taraf
+    {
+        margin-left: 667px;
+        margin-top: -564px;
+    }
+    #Hr
+    {
+        border: solid #ff0000; 
+        width: 182px;
+        margin-left: 0;
+        margin-top: -20px;
+    }
+    
+    .bilgi
+    {
+        display: block;
+        width: 40px;
+        height: 45px;
+        float: left;
+    }
+    #tel
+    {
+      margin-top: -11px;
+    }
+    #fax
+    {
+        margin-top: -16px;     
+    }
+    #posta
+    {
+          margin-top: -5px;  
+    }
+    p
+    {
+        margin-bottom: 17px;
+    }
+    #ayrica
+    {
+        margin-left: 668px;
+        font-size: 21px;
+        font-style: italic;
+        font-weight: bold;
+    }
+        /*Sosyal medya */
+        
+    img
+    {
+        
+        width: 50px;
+        height: 50px;
+    }
+    .sosyal
+    {
+        margin-left: 659px;
+    }

@@ -1,0 +1,363 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>ALHABER</title>
+        <link rel="stylesheet" href="css/style.css"></link>
+        <meta charset="utf-8">
+    </head>
+    <body onload="onemliGunler(); platformControl()">
+    <!--Header Başlangıç-->
+        <header>
+            
+        <!--Header Üst Kısım Başlangıç-->
+            <div class="ust">
+                <div class="tasiyici">
+                    <p>Erzurum 8°C Çok Bulutlu / 15 Nisan Cuma 2016 21:36</p>
+                    <p>DOLAR: <span class="doviz dusus">2.83</span>EURO: <span class="doviz yukselis">3.22</span>GRAM: <span class="doviz dusus">114.65</span>ÇEYREK: <span class="doviz yukselis">187.50</span>BİST: <span class="doviz dusus">83.72</span>BİST-30: <span  class="doviz dusus">102.42</span></p>                    
+                </div>
+            </div>
+        <!--Header Üst Kısım Bitiş-->
+            
+        <!--Header Ana Kısım Başlangıç-->
+            <div class="ana">
+                <div class="tasiyici">
+                    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo" /></a>
+
+                    <input type="search" value="Ara" />
+                    
+                    <figure>
+                        <img src="images/user.png" alt="user" width="60px" />
+                        <figcaption><a href="master_UyeEkrani.html">Üyelik</a></figcaption>
+                    </figure>
+                    
+                </div>
+            </div>
+        <!--Header Ana Kısım Bitiş-->
+            
+        <!--MenüBar Kısmı Başlangıç-->
+            <nav id="menubar">
+                
+                <!--Menü Kısmı Başlangıç-->
+                    <div id="menu">
+                        <div class="tasiyici">
+                            
+                            <ul id="menu-elemanlari">
+                                <li><a href="index.html">Gündem</a></li>
+                                <li><a href="master_Ekonomi.html">Ekonomi</a></li>
+                                <li><a href="master_Siyaset.html">Siyaset</a></li>
+                                <li><a href="master_Uluslararasi.html">Uluslararası</a></li>
+                                <li><a class="selected" href="onemli_gunler.html">Önemli Günler</a></li>
+                                <li><a href="master_EnCokTiklanan.html">En Çok Okunanlar</a></li>
+                                <li><a href="master_SiteHaritası.html">Site Haritası</a></li>
+                                <li><a href="master_Iletisim.html">İletişim</a></li>
+                            </ul>
+                            
+                            <div id="sosyal-medya">
+                                <ul>
+                                    <li><a href="#"><img src="images/icon-social-fb.png"  alt="facebook" /></a></li>
+                                    <li><a href="#"><img src="images/icon-social-tw.png"  alt="twitter" /></a></li>
+                                    <li><a href="#"><img src="images/icon-social-ig.png"  alt="instagram" /></a></li>
+                                    <li><a href="#"><img src="images/icon-social-gp.png"  alt="google+" /></a></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                <!--Menü Kısmı Bitiş-->   
+                
+                <!--Alt-Menü Kısmı Başlangıç-->
+                    <div id="alt-menu">
+                        <div class="tasiyici">
+                            <ul>
+                                <li><a href="#">Alt menu 1</a></li>
+                                <li><a href="#">Alt menu 2</a></li>
+                                <li><a href="#">Alt menu 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <!--Alt-Menü Kısmı Bitiş-->
+               
+            </nav>
+        <!--MenüBar Kısmı Bitiş-->
+        
+        <!--Öne-Çıkanlar Kısmı Başlangıç-->
+            <div id="one-cikanlar">
+                <div class="tasiyici">
+                    
+                    <div class="baslik">
+                        <img src="images/double-up-arrow.png" alt="arrows" width="25px"/>
+                        <h4>Öne Çıkan Haberler</h4>
+                    </div>
+                    
+                    <div id="one-cikan-haberler">
+                        <ul>
+                            <li><a href="haber.html">Dolu yağışı geliyor</a></li>
+                            <li><a href="haber.html">11 şirkete kayyum</a></li>
+                            <li><a href="haber.html">Aranan PKK'lı vuruldu</a></li>
+                            <li><a href="haber.html">AK Partili Başkan kaza geçirdi</a></li>
+                            <li><a href="haber.html">En yüksek nişan</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        <!--Öne-Çıkanlar Kısmı Bitiş-->
+            
+        </header>
+    <!--Header Bitiş-->
+        
+        <div id="content">
+            <div class="tasiyici">
+                <table id="gunler">
+                    <tr class="tarih">
+                        <th class="onceki"> <-- </th>
+                        <th colspan="5">Mayıs 2016</th>
+                        <th class="sonraki"> --> </th>
+                    </tr>
+                    <tr>
+                        <th>Pazartesi</th>
+                        <th>Salı</th>
+                        <th>Çarşamba</th>
+                        <th>Perşembe</th>
+                        <th>Cuma</th>
+                        <th>Cumartesi</th>
+                        <th>Pazar</th>
+                    </tr>
+                    <tr>
+                        <td><p>1</p></td>
+                        <td><p>2</p></td>
+                        <td><p>3</p></td>
+                        <td><p>4</p></td>
+                        <td><p>5</p></td>
+                        <td>
+                            <p>6</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                        <td>
+                            <p>7</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>8</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                        <td>
+                            <p>9</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                        <td>
+                            <p>10</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                            <h5>Avukatlar Günü</h5>
+                        </td>
+                        <td>
+                            <p>11</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                        <td>
+                            <p>12</p>
+                            <h5 class="tp1">Dünya Sağlık Günü ve Kanser Haftası</h5>
+                        </td>
+                        <td>
+                            <p>13</p></td>
+                        <td>
+                            <p>14</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>15</p>
+                            <h5 class="tp2">Polis Teşkilatının Kuruluşu</h5>
+                        </td>
+                        <td>
+                            <p>16</p>
+                        </td>
+                        <td><p>17</p></td>
+                        <td><p>18</p></td>
+                        <td><p>19</p></td>
+                        <td>
+                            <p>20</p>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>21</p>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>22</p>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>23</p>
+                            <h5>Turizm Haftası</h5>
+                            <h5 class="tp5">Ulusal Egemenlik ve Çocuk Bayramı</h5>	
+
+                          
+                            
+                        </td>
+                        <td>
+                            <p>24</p>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>25</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>26</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>27</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                            <h5>Turizm Haftası</h5>
+                        </td>
+                        <td>
+                            <p>28</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>29</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                        </td>
+                        <td>
+                            <p>30</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                        </td>
+                        <td>
+                            <p>31</p>
+                            <h5 class="tp3">Kutlu Doğum Haftası</h5>
+                        </td>
+                        <td><p>1</p></td>
+                        <td>
+                            <p>2</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td>
+                            <p>3</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td>
+                            <p>4</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>5</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td>
+                            <p>6</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td>
+                            <p>7</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td>
+                            <p>8</p>
+                            <h5 class="tp4">Kardeşlik Haftası</h5>
+                        </td>
+                        <td><p>9</p></td>
+                        <td><p>10</p></td>
+                        <td><p>11</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    <!--Footer Başlangıç-->
+        <footer>
+            <div class="tasiyici">
+                
+                <img src="images/logo2.png" alt="logo" />
+                <div style="clear:both"></div>
+                <div id="sol-taraf">
+                    
+                    <ul id="linkler">
+                        <li><a href="#">Gündem Haberleri</a></li>
+                        <li><a href="#">Siyaset Haberleri</a></li>
+                        <li><a href="#">Ekonomi Haberleri</a></li>
+                        <li><a href="#">Uluslararası Haberler</a></li>
+                        <li><a href="#">Önemli Günler</a></li>
+                        <li><a href="#">En Çok Okunan Haberler</a></li>
+                        <li><a href="#">Site Haritası</a></li>
+                    </ul>
+                    
+                    <div id="sosyal-medya">
+                        <p>Sosyal Medya Hesaplarımız</p>
+                        <ul>
+                            <li><a href="#"><img src="images/icon-social-fb.png"  alt="facebook" /></a></li>
+                            <li><a href="#"><img src="images/icon-social-tw.png"  alt="twitter" /></a></li>
+                            <li><a href="#"><img src="images/icon-social-ig.png"  alt="instagram" /></a></li>
+                            <li><a href="#"><img src="images/icon-social-gp.png"  alt="google+" /></a></li>
+                        </ul>
+                    </div> 
+                    
+                </div>
+                
+                <div id="sag-taraf">
+                    <ul id="kurumsal">
+                        <li>
+                            <img src="images/bookmarks.png" alt="bookmarks" />
+                            <a href="#">Kurumsal</a>
+                        </li>
+                        <li>
+                            <img src="images/iphone.png" alt="iphone" />
+                            <a href="#">Mobil Uygulamalar</a>
+                        </li>
+                        <li>
+                            <img src="images/lock.png" alt="lock" />
+                            <a href="#">Yayın İlkeleri</a>
+                        </li>
+                        <li>
+                            <img src="images/rss.png" alt="rss" />
+                            <a href="#">RSS</a>
+                        </li>
+                    </ul>
+                    
+                    <table id="iletisim">
+                        <tr>
+                            <td><img src="images/phone.png" alt="phone"/></td>
+                            <td><p>0442 123 0000</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/message.png" alt="message"/></td>
+                            <td><p>www.alhaber.com</br>alhaber@gmail.com</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/location.png" alt="location"/></td>
+                            <td><p>Atatürk Üniversitesi/Erzurum</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" value="Son dakika haberleri için e-postanızı yazın."/>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <ul id="mobil-uyg">
+                        <li><img src="images/getOniTunesImg2.png"/></li>
+                        <li><img src="images/get-on-windows2.png"/></li>
+                        <li><img src="images/play-store-badge2.png"/></li>
+                    </ul>
+                    
+                    <h5>© 2016 Sitemizde bulunan haberler hiç bir şekilde kopyalanamaz ve paylaşılamaz.</h5>
+                    
+                </div>
+
+            </div>
+        </footer>
+    <!--Footer Bitiş-->
+    <script src="scripts/browser_check.js"></script>
+    </body>
+</html>

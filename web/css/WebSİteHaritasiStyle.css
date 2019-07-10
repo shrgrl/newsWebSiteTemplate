@@ -1,0 +1,16 @@
+
+            body {
+                width: 1260px;
+                font-family: Arial, Verdana, sans-serif;
+                color: #665544;}
+            .column1of0{
+                float: center;
+                
+                
+            }
+            .column1of1, .column1of2, .column1of3 , .column1of4 , .column1of5 , .column1of6 , .column1of7 , .column1of8 ,.column1of9{
+                width: 120px;
+                float: left;
+                margin: 10px;
+                }
+a:hover{color:#0000FF;}

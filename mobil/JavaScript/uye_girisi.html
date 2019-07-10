@@ -1,0 +1,27 @@
+<!DOCTYPE>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Web Programlama">
+        <title>Üyelik Ekranı</title>
+        <link rel="stylesheet" href="uye_girisi.css" type="text/css">
+         <script src="uye_girisi.js">
+         kontrol();
+        </script>
+    </head>
+    <body>
+      <fieldset class="giris">
+         <h1>Üye Girişi</h1>
+         <h3> Sosyal medya ile bağlan</h3>
+         <input type="button" value="Facbook ile Giriş" class="sosyal"> <br>
+         <input type="button" value="Twiteer ile Giriş" class="sosyal" id="tw">
+         <p>veya<br> Kulancı adı ve şifrenizi girebilirsiniz</p>
+         <input type="text" placeholder="E-Posta" class="sosyal2" id="posta"> <br>
+         <input type="password" placeholder="Şifre" class="sosyal2" id="sifre">
+         <input type="checkbox" checked="true" class="check"><span> Oturum açık tut</span><br><br>
+         <input type="submit" value="Giriş"  class="sosyal3" onclick="kontrol()">
+         <input type="button" value="Kaydol" class="sosyal3" id="kaydol">
+         <a href="#" >Şifrenizi Mi Unuttunuz? </a>
+         
+      </fieldset>
+    </body>

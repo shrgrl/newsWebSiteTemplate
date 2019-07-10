@@ -1,0 +1,332 @@
+.slides
+		   {
+			 padding: 0;
+             width: 530px;
+			 height: 420px;
+			 display: block;
+			 margin-left: 15px;
+			 position: relative;
+			 
+		   }
+
+		.slides input { display: none; }
+		.slide-container { display: block; }
+		
+		.slide
+		{
+			top: 150px;
+			opacity: 0;
+			width: 500px;
+			height: 430px;
+			display: block;
+			position: absolute;
+		
+			transform: scale(0);
+		
+			transition: all .2s ease-in-out;
+		}
+
+			.slide img
+			{
+				width: 165%;
+				height: 110%;
+                
+			}
+
+			.nav label
+			{
+				width: 65px;
+				height: 150%;
+				display: none;
+				position: absolute;
+			
+				  opacity: 0; /*  bu iki satır görevi fare slider üzerine geline sağ ve sol ok çıkıyor...  */
+				  z-index: 9;
+				cursor: pointer;
+			
+				transition: opacity .2s;
+			
+				color: #FFFFFF;
+				font-size: 100pt;
+				text-align: center;
+				line-height: 725px;
+				font-family: "Varela Round", sans-serif;
+				background-color: rgba(255, 255, 255, .2);
+				text-shadow: 0px 0px 15px rgb(119, 119, 119);
+			}
+
+			.slide:hover + .nav label { opacity: 0.5; }
+			.nav label:hover { opacity: 1; }
+			.nav .next {left:759px;}
+			input:checked + .slide-container  .slide
+			{
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out;
+			}
+
+			input:checked + .slide-container .nav label { display: block; }
+
+			.navDots
+			{
+				width: 140%;
+				bottom: -110px;
+				display: block;
+				position: absolute;
+				text-align: center;
+			}
+
+			.navDots .navDot
+			{
+				top: 120px;
+				width: 12px;
+				height: 10px;
+				margin: 6px 6px;
+				position: relative;
+				border-radius: 100%;
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+			}
+
+			.navDots .navDot:hover
+			{
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+
+			input#img1:checked ~ .navDots label#imgDot1,
+			input#img2:checked ~ .navDots label#imgDot2,
+			input#img3:checked ~ .navDots label#imgDot3,
+			input#img4:checked ~ .navDots label#imgDot4,
+			input#img5:checked ~ .navDots label#imgDot5,
+			input#img6:checked ~ .navDots label#imgDot6
+			{
+				background: rgba(0, 0, 0, 0.8);
+			}
+            
+			/* Slinder için CSS style  BITTI  */
+			
+            /*orta dogu haberleri */
+			.orta
+			{
+			  width: 825px;
+			  height: 490px;
+			  background-color: #eeeeee;
+			  margin-left: 15px;
+			  margin-top: 270px;
+			}
+			#orta_hb_1
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#orta_hb_1 img
+			{
+			  height: 125px;
+			}
+            .info
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas
+			{
+			  font-weight: bold;
+			}
+			#bir
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			  
+			}
+			
+			#orta_hb_2
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#orta_hb_2 img
+			{
+			  height: 125px;
+			}
+            .info2
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas2
+			{
+			  font-weight: bold;
+			}
+			#iki
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			}
+			#but1
+			{
+			  width: 175px;
+			  height: 42px;
+			  margin-left: 309px;
+			}
+			#uc
+			{
+			  width: 400px;
+			  border: double #ff2f2f;
+			}
+			
+			/*Amrika haberleri */
+			.abd
+			{
+			  width: 825px;
+			  height: 490px;
+			  background-color: #eeeeee;
+			  margin-left: 15px;
+			  margin-top: -21px;
+			}
+			#abd_hb_1
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#abd_hb_1 img
+			{
+			  height: 125px;
+			}
+            .info3
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas3
+			{
+			  font-weight: bold;
+			}
+			#dort
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			  
+			}
+			
+			#abd_hb_2
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#abd_hb_2 img
+			{
+			  height: 125px;
+			}
+            .info4
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas4
+			{
+			  font-weight: bold;
+			}
+			#bes
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			}
+			#but2
+			{
+			  width: 175px;
+			  height: 42px;
+			  margin-left: 309px;
+			}
+			#alti
+			{
+			  width: 400px;
+			  border: double #ff2f2f;
+			}
+			
+			/*Afrika haberleri */
+			.afrika
+			{
+			  width: 825px;
+			  height: 490px;
+			  background-color: #eeeeee;
+			  margin-left: 15px;
+			  margin-top: -21px;
+			}
+			#afr_hb_1
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#afr_hb_1 img
+			{
+			  height: 125px;
+			}
+            .info5
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas5
+			{
+			  font-weight: bold;
+			}
+			#yedi
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			  
+			}
+			
+			#afr_hb_2
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#afr_hb_2 img
+			{
+			  height: 125px;
+			}
+            .info6
+			{
+			  font-size: large;
+			  margin-left: 130px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas6
+			{
+			  font-weight: bold;
+			}
+			#sekiz
+			{
+			  width: 782px;
+			  border: solid #ff4646;
+			  margin-top: 73px;
+			}
+			#but3
+			{
+			  width: 175px;
+			  height: 42px;
+			  margin-left: 309px;
+			}
+			#dokuz
+			{
+			  width: 400px;
+			  border: double #ff2f2f;
+			}

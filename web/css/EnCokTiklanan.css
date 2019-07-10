@@ -1,0 +1,292 @@
+.resim1{
+  position: relative;
+  left: 30px;
+  top: 40px;
+}
+.resim2{
+  position: relative;
+  left: 30px;
+  top: 60px;
+}
+.resim3{
+  position: relative;
+  left: 1080px;
+  top: -390px;
+}
+.resim4{
+  position: relative;
+  left: 1080px;
+  top: -370px;
+}
+.resim5{
+  position: relative;
+  left: 60px;
+  top: -270px;
+}
+.resim6{
+  position: relative;
+  left: 60px;
+  top: -250px;
+}
+.new img
+             {
+                width: 200px;
+                height: 200px;  
+             }
+          
+             slides img:hover
+             {
+                cursor: pointer;
+             }
+                
+.slides
+		   {
+			 padding: 0;
+             width: 530px;
+			 height: 420px;
+			 display: block;
+			 margin-left: 280px;
+             margin-top:-420px;
+			 position: relative;
+			 
+		   }
+
+		.slides input { display: none; }
+		.slide-container { display: block; }
+		
+		.slide
+		{
+			top: -850px;
+			opacity: 0;
+			width: 500px;
+			height: 430px;
+			display: block;
+			position: absolute;
+		
+			transform: scale(0);
+		
+			transition: all .2s ease-in-out;
+		}
+
+			.slide img
+			{
+				width: 150%;
+				height: 110%;
+                
+			}
+
+			.nav label
+			{
+				width: 65px;
+				height: 115%;
+				display: none;
+				position: absolute;
+			
+				  opacity: 0; /*  bu iki satır görevi fare slider üzerine geline sağ ve sol ok çıkıyor...  */
+				  z-index: 9;
+				cursor: pointer;
+			
+				transition: opacity .2s;
+			
+				color: #FFFFFF;
+				font-size: 100pt;
+				text-align: center;
+				line-height: 450px;
+				font-family: "Varela Round", sans-serif;
+				background-color: rgba(255, 255, 255, .2);
+				text-shadow: 0px 0px 15px rgb(119, 119, 119);
+			}
+
+			.slide:hover + .nav label { opacity: 0.5; }
+			.nav label:hover { opacity: 1; }
+            .nav .next { left:690px; top: -850px; }
+            .nav .prev { left:0px; top: -850px;}
+			input:checked + .slide-container  .slide
+			{
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out;
+			}
+
+			input:checked + .slide-container .nav label { display: block; }
+
+			.navDots
+			{
+				width: 140%;
+				bottom: -110px;
+				display: block;
+				position: absolute;
+				text-align: center;
+			}
+
+			.navDots .navDot
+			{
+				top: -850px;
+				width: 12px;
+				height: 10px;
+				margin: 6px 6px;
+				position: relative;
+				border-radius: 100%;
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+			}
+
+			.navDots .navDot:hover
+			{
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+
+			input#img1:checked ~ .navDots label#imgDot1,
+			input#img2:checked ~ .navDots label#imgDot2,
+			input#img3:checked ~ .navDots label#imgDot3,
+			input#img4:checked ~ .navDots label#imgDot4,
+			input#img5:checked ~ .navDots label#imgDot5,
+			input#img6:checked ~ .navDots label#imgDot6
+			{
+				background: rgba(0, 0, 0, 0.8);
+			}
+
+
+   .slides2
+		   {
+			 padding: 0;
+             width: 650px;
+			 height: 420px;
+			 display: block;
+			 margin: -1300px auto;
+             margin-left: 420px; 
+			 position: relative;
+		   }
+		.slides2 input { display: none; }
+		.slide-container2 { display: block; }
+		
+		.slide2
+		{
+			top: 235px;
+			opacity: 0;
+			width: 600px;
+			height: 420px;
+			display: block;
+			position: absolute;
+			transform: scale(0);
+			transition: all .2s ease-in-out;
+		}
+
+			.slide2 img
+			{
+
+                width: 142%;
+                height: 105%;
+                margin-left:-50px;
+                margin-top: 330px;
+			}
+
+			.nav2 label
+			{
+				width: 53px;
+				height: 105%;
+				display: none;
+				position: absolute;
+			
+				  opacity: 0; /*  bu iki satır görevi fare slider üzerine geline sağ ve sol ok çıkıyor...  */
+				  z-index: 9;
+				cursor: pointer;
+			
+				transition: opacity .2s;
+				color: #FFFFFF;
+				font-size: 100pt;
+				text-align: center;
+				line-height: 357px;
+				font-family: Helvetica,Arial , sans-serif;
+				background-color: rgba(255, 255, 255, .2);
+				text-shadow: 0px 0px 15px rgb(119, 119, 119);
+			}
+
+			.slide2:hover + .nav2 label { opacity: 0.9; }
+			.nav2 label:hover { opacity: 1; }
+			.nav2 .next2 { left:755px; top: 570px; }
+            .nav2 .prev2 { left:-55px; top: 570px;}
+			input:checked + .slide-container2  .slide2
+			{
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out;
+			}
+
+			input:checked + .slide-container2 .nav2 label { display: block; }
+
+			.navDots2
+			{
+				width: 145%;
+				bottom: -110px;
+				display: block;
+				position: absolute;
+				text-align: center;
+			}
+
+			.navDots2 .navDot2
+			{
+				top: 540px;
+				width: 13px;
+				height: 12px;
+				margin: 9px 6px;
+				position: relative;
+				border-radius: 100%;
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+			}
+
+			.navDots2 .navDot2:hover
+			{
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			input#img1:checked ~ .navDots label#imgDot1,
+			input#img2:checked ~ .navDots label#imgDot2,
+			input#img3:checked ~ .navDots label#imgDot3
+			{
+				background: rgba(0, 0, 0, 0.8);
+			}          
+            
+.resim7{
+  position: relative;
+  left: 50px;
+  top: 1540px;
+}
+.resim8{
+  position: relative;
+  left: 50px;
+  top: 1560px;
+}
+.resim9{
+  position: relative;
+  left: 880px;
+  top: 1110px;
+}
+.resim10{
+  position: relative;
+  left: 880px;
+  top: 1130px;
+}
+.resim11{
+  position: relative;
+  left: 460px;
+  top: 680px;
+}
+.resim12{
+  position: relative;
+  left: 460px;
+  top: 700px;
+}
+.new img
+             {
+                width: 200px;
+                height: 200px;  
+             }
+          
+             slides img:hover
+             {
+                cursor: pointer;
+             }

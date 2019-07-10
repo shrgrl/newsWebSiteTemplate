@@ -1,0 +1,340 @@
+.slides
+		   {
+			 padding: 0;
+             width: 530px;
+			 height: 420px;
+			 display: block;
+			 margin-left: 15px;
+			 position: relative;
+			 
+		   }
+
+		.slides input { display: none; }
+		.slide-container { display: block; }
+		
+		.slide
+		{
+			top: 150px;
+			opacity: 0;
+			width: 500px;
+			height: 430px;
+			display: block;
+			position: absolute;
+		
+			transform: scale(0);
+		
+			transition: all .2s ease-in-out;
+		}
+
+			.slide img
+			{
+				width: 165%;
+				height: 110%;
+                
+			}
+
+			.nav label
+			{
+				width: 65px;
+				height: 150%;
+				display: none;
+				position: absolute;
+			
+				  opacity: 0; /*  bu iki satır görevi fare slider üzerine geline sağ ve sol ok çıkıyor...  */
+				  z-index: 9;
+				cursor: pointer;
+			
+				transition: opacity .2s;
+			
+				color: #FFFFFF;
+				font-size: 100pt;
+				text-align: center;
+				line-height: 725px;
+				font-family: "Varela Round", sans-serif;
+				background-color: rgba(255, 255, 255, .2);
+				text-shadow: 0px 0px 15px rgb(119, 119, 119);
+			}
+
+			.slide:hover + .nav label { opacity: 0.5; }
+			.nav label:hover { opacity: 1; }
+			.nav .next {left:759px;}
+			input:checked + .slide-container  .slide
+			{
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out;
+			}
+
+			input:checked + .slide-container .nav label { display: block; }
+
+			.navDots
+			{
+				width: 140%;
+				bottom: -110px;
+				display: block;
+				position: absolute;
+				text-align: center;
+			}
+
+			.navDots .navDot
+			{
+				top: 120px;
+				width: 12px;
+				height: 10px;
+				margin: 6px 6px;
+				position: relative;
+				border-radius: 100%;
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+			}
+
+			.navDots .navDot:hover
+			{
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+
+			input#img1:checked ~ .navDots label#imgDot1,
+			input#img2:checked ~ .navDots label#imgDot2,
+			input#img3:checked ~ .navDots label#imgDot3,
+			input#img4:checked ~ .navDots label#imgDot4,
+			input#img5:checked ~ .navDots label#imgDot5,
+			input#img6:checked ~ .navDots label#imgDot6
+			{
+				background: rgba(0, 0, 0, 0.8);
+			}
+            
+			/* Slinder için CSS style  BITTI  
+			#cizgi
+			{
+			  width: 800px;
+              height: 0px;
+			  border: solid black;
+			  margin-left: 15px;
+			  top: 200px;
+			}
+            orta dogu haberleri */
+			.orta
+			{
+			  width: 825px;
+			  height: 490px;
+			  background-color: #eeeeee;
+			  margin-left: 15px;
+			  margin-top: 270px;
+			}
+			#orta_hb_1
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#orta_hb_1 img
+			{
+			  height: 125px;
+              margin-top:15px;
+			}
+            .info
+			{
+			  font-size: large;
+			  margin-left: 270px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas
+			{
+			  font-weight: bold;
+			}
+			#bir
+			{
+			  width: 782px;
+              height: 40px;
+			  border: solid #ff4646;
+			  margin-top: -220px;
+			  
+			}
+			
+			#orta_hb_2
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#orta_hb_2 img
+			{
+			  height: 125px;
+              margin-top:15px;
+			}
+            .info2
+			{
+			  font-size: large;
+			  margin-left: 270px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas2
+			{
+			  font-weight: bold;
+			}
+			
+            #orta_hb_3
+			{
+			  width: 790px;
+			  height: 150px;
+			}
+			#orta_hb_3 img
+			{
+			  height: 125px;
+              margin-top:15px;
+			}
+            .info3
+			{
+			  font-size: large;
+			  margin-left: 270px;
+			  margin-top: -110px;
+			  list-style: none;
+			}
+			#bas3
+			{
+			  font-weight: bold;
+			}
+			
+			
+			
+            
+            /* */
+            
+
+            .son
+             {
+               width: 495px;
+               height: 450px;
+               font-size: 14px;
+               margin-left: 17px;
+               margin-top: 100px;
+               font-weight: bold;
+               text-align: center;
+            }
+            .slides3
+		   {
+			 padding: 0;
+             width: 800px;
+			 height: 420px;
+			 display: block;
+			 margin: -535px auto;
+             left: -119px; 
+			 position: relative;
+		   }
+		.slides3 input { display: none; }
+		.slide-container3 { display: block; }
+		
+		.slide3
+		{
+			top: 353px;
+			opacity: 0;
+			width: 575px;
+			height: 352px;
+			display: block;
+			position: absolute;
+            margin-left: 10px;
+		}
+
+			.slide3 img
+			{
+
+                width: 140%;
+				height: 110%;
+                margin-left: 109px;
+                margin-top: 170px;
+			}
+
+			.nav3 label
+			{
+				width: 53px;
+				height: 90%;
+				display: none;
+				position: absolute;
+			
+				  opacity: 0; /*  bu iki satır görevi fare slider üzerine geline sağ ve sol ok çıkıyor...  */
+				  z-index: 9;
+				cursor: pointer;
+			
+				transition: opacity .2s;
+				color: #FFFFFF;
+				font-size: 100pt;
+				text-align: center;
+				line-height: 500px;
+				font-family: Helvetica,Arial , sans-serif;
+				background-color: rgba(255, 255, 255, .2);
+				text-shadow: 0px 0px 15px rgb(119, 119, 119);
+			}
+
+			.slide3:hover + .nav3 label { opacity: 0.9; }
+			.nav3 label:hover { opacity: 1; }
+			.nav3 .next3 { left:875px; top: 530px; }
+            .nav3 .prev3 { left:119px; top: 530px;}
+			input:checked + .slide-container3  .slide3
+			{
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 1s ease-in-out;
+			}
+
+			input:checked + .slide-container3 .nav3 label { display: block; }
+
+			.navDots3
+			{
+				width: 145%;
+				bottom: -110px;
+				display: block;
+				position: absolute;
+				text-align: center;
+			}
+
+			.navDots3 .navDot3
+			{
+				top: 460px;
+				width: 13px;
+				height: 12px;
+                left:-10px;
+				margin: 58px 1px;
+				position: relative;
+				border-radius: 100%;
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+			}
+
+			.navDots3 .navDot3:hover
+			{
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			input#img1:checked ~ .navDots label#imgDot1,
+			input#img2:checked ~ .navDots label#imgDot2,
+			input#img3:checked ~ .navDots label#imgDot3
+			{
+				background: rgba(0, 0, 0, 0.8);
+			}
+.sonres
+             {
+               width: 800px;
+               height: 380px;
+               font-size: 14px;
+               margin-left: 17px;
+               font-weight: bold;
+               text-align: center;
+            }
+ .res1{
+  position: relative;
+  left: 1px;
+  top: 1px;
+}
+.res2{
+  position: relative;
+  left: 1px;
+  top: 15px;
+}
+ .new img
+             {
+                width: 760px;
+                height: 150px;  
+             }    
+         
